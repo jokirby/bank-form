@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Banking-form</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+
+<body>
+  <div id="wrapper">
+		<header>
+			<img src="images/FifthThirdBank-logo.jpg" alt="Fifth Third Bank logo">
+			<h1>Loan Application</h1>
+		</header>
+		
+		<div id="name">
+			<form action="demo_form.asp">
+			  First name: <input type="text" name="fname">
+			  Middle Initial: <input type="text" name="minitial">
+			  Last name: <input type="text" name="lname">
+			</form>
+		</div>
+
+		<div id="basicinfo">
+			<form>
+				Home address: <input type="text" name="address" required>
+				Occupation: <input type="text" name="occupation">
+				Employer: <input type="text" name="employer">
+				Employer Address: <input type="text" name="eaddress">
+			</form>
+		</div>
+
+		<div id="loaninfo">
+			<div>
+				<h2>Type of Loan</h2>
+				<select>
+				  <option value="Commercial">Commercial</option>
+				  <option value="Real estate">Real estate</option>
+				  <option value="Personal">Personal</option>
+				  <option value="Mortgage">Mortgage</option>
+				</select>
+			</div>
+
+			<h3>Loan amount</h3><textarea></textarea>
+
+			<div>
+				<h3>Loan Length</h3>
+				<form>
+				  <input type="radio" name="loanlength" value="5 years" checked> 5 years<br>
+				  <input type="radio" name="loanlength" value="15 years"> 15 years<br>
+				  <input type="radio" name="loanlength" value="30 years"> 30 years
+				</form>
+			</div>
+		</div>
+
+	<h3>Special Conditions</h3>
+		<form action="demo_form.asp">
+		  <input type="checkbox" name="Special Conditions" value="downpayment"> I have a downpayment<br>
+		  <input type="checkbox" name="Special Conditions" value="Out-of-state" checked> Out-of-state resident<br>
+		  <input type="checkbox" name="Special Conditions" value="Married" checked> Married<br>
+		  <input type="checkbox" name="Special Conditions" value="co-signed" checked> Loan will be co-signed<br>
+		</form>
+
+		<div id="comments">
+			<h3>Additional comments</h3>
+			<textarea style="width:60%"></textarea>
+		</div>
+
+		<form>
+			Email address: <input type="email" name="email">
+			Phone Number: <input type="tel" name="phone">
+			Linkedin URL: <input type="url" name="URL">
+			<p><input type="submit" value="Submit"></p>
+		</form>
+
+		<footer> &copy;Fifth Third Bank 2016</footer>
+	</div>
+</body>
+</html>
